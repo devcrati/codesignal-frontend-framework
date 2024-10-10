@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "mocha"
   },
   "dependencies": {
+    "chai": "^5.1.1",
+    "puppeteer": "^23.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sass-embedded": "1.79.4",

@@ -1,32 +1,32 @@
 [
-    {
-        "id": "e9f3d12d-fc46-4c17-b7ec-e03336a2e42c",
-        "firstName": "John",
-        "lastName": "Richardson",
-        "email": "johncrichardson@gmail.com",
-        "phoneNumber": "501-625-3733",
-        "loyaltyPoints": 855,
-        "numberOfPurchases": 7,
-        "personalManager": "Alina Gray"
-    },
-    {
-        "id": "3d00f704-a15d-4796-8520-16a288741403",
-        "firstName": "Gail",
-        "lastName": "Obrien",
-        "email": "gailjobrien@gmail.com",
-        "phoneNumber": "262-328-2438",
-        "loyaltyPoints": 1850,
-        "numberOfPurchases": 10,
-        "personalManager": "Troy Fowler"
-    },
-    {
-        "id": "00c867b8-b0e1-4833-8dd9-57377679cfb7",
-        "firstName": "Anna",
-        "lastName": "Dunn",
-        "email": "anna1984@gmail.com",
-        "phoneNumber": "303-297-8468",
-        "loyaltyPoints": 910,
-        "numberOfPurchases": 4,
-        "personalManager": "Bryce Hammond"
-    }
+  {
+    "id": "e9f3d12d-fc46-4c17-b7ec-e03336a2e42c",
+    "firstName": "John",
+    "lastName": "Richardson",
+    "email": "johncrichardson@gmail.com",
+    "phoneNumber": "501-625-3733",
+    "loyaltyPoints": 855,
+    "numberOfPurchases": 7,
+    "personalManager": "Alina Gray"
+  },
+  {
+    "id": "3d00f704-a15d-4796-8520-16a288741403",
+    "firstName": "Gail",
+    "lastName": "Obrien",
+    "email": "gailjobrien@gmail.com",
+    "phoneNumber": "262-328-2438",
+    "loyaltyPoints": 1850,
+    "numberOfPurchases": 10,
+    "personalManager": "Troy Fowler"
+  },
+  {
+    "id": "00c867b8-b0e1-4833-8dd9-57377679cfb7",
+    "firstName": "Anna",
+    "lastName": "Dunn",
+    "email": "annal1984@gmail.com",
+    "phoneNumber": "303-297-8468",
+    "loyaltyPoints": 910,
+    "numberOfPurchases": 4,
+    "personalManager": "Bryce Hammond"
+  }
 ]

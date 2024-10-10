@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const CustomerCard = ({
   id,
@@ -19,6 +19,10 @@ const CustomerCard = ({
   const [newPhoneNumber, setPhoneNumber] = useState(phoneNumber);
   const [managerId, setManagerId] = useState(personalManager?.id);
 
+  useEffect(() => {
+    setManagerId(personalManager?.id);
+  }, [personalManager]);
+
   const handleEdit = (e) => {
     e.preventDefault();
 
@@ -32,12 +36,14 @@ const CustomerCard = ({
         newFirstName,
         newLastName,
         newEmail,
-        phoneNumber,
+        newPhoneNumber,
         manager
       );
       setEditMode(false);
     }
   };
+
+  console.log({ managers, managerId, firstName, personalManager });
 
   if (isEditMode)
     return (
@@ -73,12 +79,6 @@ const CustomerCard = ({
             onChange={(e) => setManagerId(e.target.value)}
           >
             <option value=""></option>
-            <option value="a9f39c40-b073-11ec-b909-0242ac12002">
-              Philip Hilton
-            </option>
-            <option value="a5caa712-b073-11ec-b909-0242ac12002">
-              Lynda Olson
-            </option>
             {managers.map((item) => (
               <option key={item.id} value={item.id}>
                 {`${item.firstName} ${item.lastName}`}

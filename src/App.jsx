@@ -91,6 +91,8 @@ const App = () => {
     );
   };
 
+  console.log(customerData);
+
   return (
     <main>
       <h2>Add a new customer</h2>
