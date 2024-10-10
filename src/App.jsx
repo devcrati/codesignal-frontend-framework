@@ -7,7 +7,7 @@ import AddCustomerForm from "./AddCustomerForm";
 
 const App = () => {
   const [customerData, setCustomerData] = useState(customers);
-  cosnt[(managers, setManagers)] = useState([]);
+  const [managers, setManagers] = useState([]);
 
   const fetchManagers = async () => {
     const response = await fetch(

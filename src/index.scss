@@ -15,6 +15,47 @@ main {
     font-weight: 700;
   }
 
+  .add-customer-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    max-width: 300px;
+    margin-bottom: 20px;
+
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+
+      &::placeholder {
+        color: #999;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #0099ff;
+      }
+    }
+
+    input[type="submit"] {
+      background-color: #0099ff;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0077cc;
+      }
+    }
+  }
+
   .customers-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -74,5 +115,64 @@ main {
         }
       }
     }
+
+    
   }
+
+  .customer--edit {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .customer-edit-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input, select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+
+        &:focus {
+          outline: none;
+          border-color: #0099ff;
+        }
+      }
+
+      select {
+        background-color: white;
+      }
+
+      .btn {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+
+        &--secondary {
+          background-color: #f0f0f0;
+          color: #333;
+
+          &:hover {
+            background-color: #e0e0e0;
+          }
+        }
+
+        &--primary {
+          background-color: #0099ff;
+          color: white;
+
+          &:hover {
+            background-color: #0077cc;
+          }
+        }
+      }
+    }
+  }  
 }
