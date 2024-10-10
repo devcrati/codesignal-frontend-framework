@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(230, 242, 255);
+}
+
+main {
+  padding: 10px;
+  font-family: sans-serif;
+
+  h2 {
+    color: black;
+    font-weight: 700;
+  }
+
+  .customers-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1366px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .customer {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      display: flex;
+      flex-direction: column;
+      transition-duration: 0.5s;
+      position: relative;
+
+      .customer__edit-btn {
+        border: none;
+        color: gray;
+        display: inline;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+        background-image: url('data:image/svg+xml,<svg fill="grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M4 25A1 1 0 1 0 4 27 1 1 0 1 0 4 25ZM24 112.414-2.414с.781-.781.781-2.047 0-2.8281-2.172-2.172с-•101-1/01-2.04/-/01-21020 0L19 0 24 1I2ML/ 0L9.20 19:/400 0 1910-002 112012015421342- 00 2100.40 352.044.124 2.903.4430.319.319.291 1:291:291 1:29/L22 15 11 02 72<020nd= M5.5 24.514 23 3.056 20.0/2 3.465 26.535216.5 24.5L/ 26 4.320 26.944 3.465 26.5352></svg>');
+
+        &:hover {
+          color: black;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+
+      .customer__stats {
+        .stats {
+          .stats__number {
+            margin-right: 6px;
+            font-size: larger;
+            font-weight: bold;
+          }
+
+          .stats__description {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}
